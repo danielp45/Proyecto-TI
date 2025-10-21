@@ -1,6 +1,4 @@
-
 #!/bin/bash
-
 while IFS=$'\t' read -r id run; do
     # Saltar encabezados
     if [[ "$id" == "ID" || "$run" == "Run" ]]; then
