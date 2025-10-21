@@ -30,6 +30,7 @@ while IFS=$'\t' read -r id run; do
     
     if [ -f "$id/$run.sra" ]; then
         rm "$id/$run.sra"
+        rm "$id/*.fastq"
         echo "Archivo temporal eliminado"
     fi
     
@@ -37,3 +38,4 @@ while IFS=$'\t' read -r id run; do
     echo ""
     
 done < metadata2C.txt
+
