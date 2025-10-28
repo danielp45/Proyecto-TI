@@ -1,0 +1,3 @@
+wget https://github.com/danielp45/Proyecto-TI/raw/refs/heads/main/metadata2C.txt
+mv metadata2C.txt IDlist.txt
+sed -i -e 's/\r//g' -e 's/^\t//' IDlist.txt
